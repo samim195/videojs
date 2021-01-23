@@ -59,8 +59,8 @@ class App extends Component {
     render() {
         return (
             <div key={this.state.video} className="container middle">
-            <h1>{this.state.title}</h1>
-            <div className="dropdown ">
+            <h1 className="display-3">{this.state.title}</h1>
+            <div className="dropdown " style={{paddingBottom: "5px"}}>
               <select onChange={this.change} className="btn btn-secondary dropdown-toggle" aria-labelledby="dropdownMenuButton" name='videos'>
               <option value="None" selected disabled hidden> 
               Select an Option </option> 
